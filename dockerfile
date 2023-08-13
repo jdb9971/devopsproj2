@@ -1,6 +1,5 @@
-FROM ubuntu
+FROM hshar/webapp
 RUN apt-get update
-RUN apt-get -y install apache2
-ADD . /var/www/html
+ADD . /var/www/html/
+RUN service apache2 restart
 ENTRYPOINT apachectl -D FOREGROUND
-ENV name jdb9971 docker
