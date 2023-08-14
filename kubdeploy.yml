@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: prod
-        image: dockerfile
+        image: jdb9971/custom
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
