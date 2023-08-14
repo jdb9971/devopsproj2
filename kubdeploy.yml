@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prod-deployment
+  labels:
+    app: prod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prod
+  template:
+    metadata:
+      labels:
+        app: prod
+    spec:
+      containers:
+      - name: prod
+        image: dockerfile
+        ports:
+        - containerPort: 80
