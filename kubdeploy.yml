@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: prod
-        image: dockerfile
+        image: proj2-image
         imagePullPolicy: Never
         ports:
         - containerPort: 80
