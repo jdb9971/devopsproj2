@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: prod
-        image: proj2-image
+        image: jdb9971/project2
         imagePullPolicy: Never
         ports:
         - containerPort: 80
