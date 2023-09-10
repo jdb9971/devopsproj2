@@ -3,4 +3,4 @@ services :
   web :
      image : dockerfile
      ports :
-         - "8081:8000"
+         - "81:80"
